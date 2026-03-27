@@ -7,144 +7,210 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">Run & Rise Club</div>
-      <ul class="menu">
-        <li><a href="#sobre">Sobre nosotros</a></li>
-        <li><a href="#publico">Público objetivo</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#videos">Vídeos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero-content">
-      <h1>Run & Rise Club</h1>
-      <p>Corre. Conecta. Crece.</p>
-      <a href="#sobre" class="btn">Descubrir más</a>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#" class="logo">Run & Rise Club</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#historia">Nuestra historia</a></li>
+          <li><a href="#eventos">Próximos eventos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section id="sobre" class="section">
-    <h2>Sobre la marca</h2>
-    <p>
-      Run & Rise Club es un club de running que une deporte, vida saludable,
-      comunidad y experiencias compartidas. Organiza quedadas semanales, eventos
-      propios, excursiones a carreras en otras ciudades y vende merchandising
-      para reforzar la identidad del club.
-    </p>
-  </section>
-
-  <section id="publico" class="section alt">
-    <h2>Público objetivo</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Laura, 24 años</h3>
-        <p><strong>Perfil:</strong> corredora social</p>
-        <p>
-          Busca correr todas las semanas con un grupo que la motive, conocer gente
-          y participar en carreras populares y eventos deportivos.
-        </p>
-        <p><strong>Redes sociales:</strong> Instagram, TikTok y Strava</p>
-      </div>
-
-      <div class="card">
-        <h3>Teo, 31 años</h3>
-        <p><strong>Perfil:</strong> corredor competitivo</p>
-        <p>
-          Quiere viajar sumando kilómetros, mejorar sus tiempos y participar en
-          carreras en distintas ciudades con una comunidad que comparta su motivación.
-        </p>
-        <p><strong>Redes sociales:</strong> Instagram, YouTube y Strava</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">Running · Comunidad · Viajes · Superación</p>
+      <h1>Corre. Conecta. Crece.</h1>
+      <p class="hero-text">
+        Run & Rise Club es un club de running que une vida saludable, amistad,
+        motivación y experiencias compartidas a través de quedadas semanales,
+        carreras y escapadas a eventos deportivos.
+      </p>
+      <div class="hero-buttons">
+        <a href="#eventos" class="btn btn-primary">Ver próximos eventos</a>
+        <a href="#historia" class="btn btn-secondary">Conoce nuestra historia</a>
       </div>
     </div>
   </section>
 
-  <section id="blog" class="section">
-    <h2>Blog de la marca</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Consejos para empezar a correr desde cero y no abandonar</h3>
-        <p><strong>Tema principal:</strong> Running para principiantes</p>
-        <p><strong>Objetivo:</strong> Atraer a personas que quieren empezar a correr</p>
+  <section class="carousel-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Momentos del club</p>
+        <h2>Eventos y experiencias Run & Rise</h2>
       </div>
 
-      <div class="card">
-        <h3>Cómo prepararte para tu primera media maratón paso a paso</h3>
-        <p><strong>Tema principal:</strong> Preparación para media maratón</p>
-        <p><strong>Objetivo:</strong> Aportar valor a corredores más avanzados</p>
-      </div>
+      <div class="carousel">
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
 
-      <div class="card">
-        <h3>Las mejores carreras populares en España para viajar corriendo</h3>
-        <p><strong>Tema principal:</strong> Carreras populares + viajes</p>
-        <p><strong>Objetivo:</strong> Promocionar excursiones del club</p>
-      </div>
-    </div>
-  </section>
+        <div class="slides">
+          <div class="slide slide-1">
+            <div class="slide-card">
+              <span class="slide-label">Evento propio</span>
+              <h3>5K Run & Rise Weekend</h3>
+              <p>Carrera popular del club con dorsal, música, fotos y desayuno post-run.</p>
+            </div>
+          </div>
 
-  <section id="videos" class="section alt">
-    <h2>Ideas de vídeos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Vídeo 1</h3>
-        <p><strong>Plataforma:</strong> TikTok / Instagram Reels</p>
-        <p><strong>Duración:</strong> 30 segundos</p>
-        <p>
-          Vídeo de una quedada del club: calentamiento, grupo corriendo, ambiente
-          social y café final.
-        </p>
-        <p><strong>Objetivo:</strong> Mostrar la comunidad y atraer nuevos miembros</p>
-      </div>
+          <div class="slide slide-2">
+            <div class="slide-card">
+              <span class="slide-label">Excursión deportiva</span>
+              <h3>Viaje a la Media Maratón de Valencia</h3>
+              <p>Transporte, grupo, merchandising y experiencia compartida en otra ciudad.</p>
+            </div>
+          </div>
 
-      <div class="card">
-        <h3>Vídeo 2</h3>
-        <p><strong>Plataforma:</strong> TikTok / Instagram Reels / YouTube Shorts</p>
-        <p><strong>Duración:</strong> 45 segundos</p>
-        <p>
-          Vídeo del club viajando a una carrera en otra ciudad: trayecto, preparación,
-          carrera y celebración final.
-        </p>
-        <p><strong>Objetivo:</strong> Promocionar excursiones y experiencias deportivas</p>
+          <div class="slide slide-3">
+            <div class="slide-card">
+              <span class="slide-label">Comunidad</span>
+              <h3>Quedada semanal + café del club</h3>
+              <p>Entrenamientos para distintos niveles y ambiente social después de correr.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Storytelling</h2>
-    <p>
-      Run & Rise Club nació cuando un pequeño grupo de personas empezó a quedar
-      para correr una vez a la semana. Lo que comenzó como una simple forma de
-      motivarse para no correr solos, se transformó poco a poco en una comunidad
-      donde compartir kilómetros, retos, carreras y viajes. La marca representa
-      la idea de correr para crecer, no solo a nivel físico, sino también personal
-      y social.
-    </p>
-
-    <h3>Misión</h3>
-    <p>
-      La misión de Run & Rise Club es crear una comunidad de running que motive a
-      las personas a correr de forma constante, mejorar su bienestar físico y
-      disfrutar del deporte en grupo.
-    </p>
-
-    <h3>Visión</h3>
-    <p>
-      La visión de Run & Rise Club es convertirse en un referente dentro del
-      running social, uniendo deporte, comunidad y experiencias en distintas ciudades.
-    </p>
+  <section id="historia" class="section section-soft">
+    <div class="container grid-two">
+      <div>
+        <p class="section-tag">Nuestra historia</p>
+        <h2>Más que un club de running</h2>
+        <p>
+          Run & Rise Club nació cuando un pequeño grupo de personas comenzó a quedar
+          una vez por semana para correr y motivarse mutuamente. Con el tiempo, esas
+          quedadas se transformaron en una comunidad que comparte kilómetros, amistades,
+          retos y viajes a carreras en otras ciudades.
+        </p>
+        <p>
+          Hoy, Run & Rise representa una forma de vivir el running desde la energía,
+          la constancia y la conexión con otras personas. No se trata solo de correr,
+          sino de crecer juntos.
+        </p>
+      </div>
+      <div class="value-box">
+        <h3>Valores de la marca</h3>
+        <ul>
+          <li>Comunidad y amistad</li>
+          <li>Vida saludable</li>
+          <li>Motivación constante</li>
+          <li>Superación personal</li>
+          <li>Experiencias compartidas</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="contacto" class="section contacto">
-    <h2>Contacto</h2>
-    <p>📍 Sevilla</p>
-    <p>📧 runandriseclub@gmail.com</p>
-    <p>📱 @runandriseclub</p>
+  <section id="eventos" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Próximos eventos</p>
+        <h2>Lo que organiza Run & Rise Club</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="pill">Sábado</span>
+          <h3>Quedada semanal en Madrid</h3>
+          <p>Entrenamiento grupal para todos los niveles + café del club.</p>
+        </article>
+
+        <article class="card">
+          <span class="pill">Próximo mes</span>
+          <h3>Run & Rise 5K</h3>
+          <p>Evento propio con inscripción, camisetas y activaciones de marca.</p>
+        </article>
+
+        <article class="card">
+          <span class="pill">Escapada</span>
+          <h3>Viaje a una carrera popular</h3>
+          <p>Excursión a otra ciudad para correr, convivir y sumar kilómetros juntos.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Run & Rise Club</p>
+  <section id="blog" class="section section-soft">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Blog</p>
+        <h2>Contenido para nuestra comunidad</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Consejos para empezar a correr desde cero y no abandonar</h3>
+          <p>Contenido pensado para personas que quieren iniciarse en el running y encontrar motivación.</p>
+        </article>
+
+        <article class="card">
+          <h3>Cómo prepararte para tu primera media maratón paso a paso</h3>
+          <p>Guía para corredores que buscan retos mayores y quieren mejorar su rendimiento.</p>
+        </article>
+
+        <article class="card">
+          <h3>Las mejores carreras populares en España para viajar corriendo</h3>
+          <p>Artículo que conecta con la propuesta del club basada en viajes y experiencias deportivas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container cta-box">
+      <div>
+        <p class="section-tag light">Únete al club</p>
+        <h2>Un club para correr acompañado</h2>
+        <p>
+          Tanto si quieres empezar a correr como si buscas viajar a nuevas carreras,
+          en Run & Rise encontrarás una comunidad que te impulsa a seguir.
+        </p>
+      </div>
+      <a href="#contacto" class="btn btn-white">Contactar</a>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Contacto</p>
+        <h2>Hablemos</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>hola@runandriseclub.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Instagram</h3>
+          <p>@runandriseclub</p>
+        </div>
+        <div class="contact-card">
+          <h3>Ciudad base</h3>
+          <p>Madrid</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
   </footer>
 </body>
 </html>
