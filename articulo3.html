@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mejores carreras populares en España - Run & Rise Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .article-header {
+      padding: 60px 0;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(255,138,61,0.1), rgba(255,79,147,0.1));
+    }
+    .event-image {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--radius);
+      margin: 40px auto;
+      display: block;
+      box-shadow: var(--shadow);
+    }
+    .article-content {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    .article-content h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .article-content p {
+      margin-bottom: 24px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--pink);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html.html" class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Run & Rise Club" style="height: 40px; margin-right: 10px;">
+        <span>Run & Rise Club</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html.html">Inicio</a></li>
+          <li><a href="historia.html" target="_blank">Nuestra historia</a></li>
+          <li><a href="eventos.html" target="_blank">Próximos eventos</a></li>
+          <li><a href="eventos-celebrados.html">Eventos celebrados</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="merchandising.html">Merchandising</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <article>
+    <header class="article-header">
+      <div class="container">
+        <span class="pill">Destinos y Viajes</span>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 10px;">Las mejores carreras populares en España</h1>
+        <p>Por <strong>Equipo Run & Rise</strong> · Tiempo de lectura: 4 min</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <img src="medallas.png" alt="Medallas de Carreras" class="event-image">
+        
+        <div class="article-content">
+          <a href="blog.html" class="back-link">← Volver al blog</a>
+
+          <p>Una de las mejores partes de pertenecer a Run & Rise Club es la excusa perfecta que nos dan las carreras para viajar, conocer otras ciudades y hacer turismo gastando zapatilla. Aquí te dejamos nuestras carreras populares favoritas a nivel nacional.</p>
+
+          <h2>1. Medio Maratón y Maratón de Valencia (Octubre/Diciembre)</h2>
+          <p>Es la "ciudad del running" por excelencia. Circuito ultrarrápido, clima ideal y una ciudad entera volcada con el corredor. Si buscas batir tu marca personal, Valencia es la cita obligatoria. El ambiente de la llegada en la Ciudad de las Artes y las Ciencias es inigualable.</p>
+
+          <h2>2. Behobia - San Sebastián (Noviembre)</h2>
+          <p>Más que una carrera, es una fiesta. Sus 20 kilómetros exigentes con constantes subidas y bajadas se compensan de sobra con el espectacular público vasco que no deja de animar en ningún momento, y cómo no, con los pintxos para celebrar en la Parte Vieja tras la meta.</p>
+
+          <h2>3. Maratón de Sevilla (Febrero)</h2>
+          <p>Nuestra ciudad base acoge a principios de año el maratón más plano de Europa. Correr rodeado y cruzando la Plaza de España, la Giralda y por la ribera del Guadalquivir hace que el esfuerzo de los legendarios 42 kilómetros se haga mucho más llevadero.</p>
+
+          <h2>4. 10K Laredo (Marzo)</h2>
+          <p>Si la distancia larga no es lo tuyo y buscas volar de verdad, este pueblo cántabro organiza uno de los 10K más rápidos del circuito español. Perfecto para una escapada de fin de semana donde el marisco y la sidra no pueden faltar para reponer fuerzas.</p>
+
+          <div style="margin-top: 60px; padding: 40px; background: white; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center;">
+            <h3 style="margin-bottom: 20px;">¿Te vienes de viaje con nosotros?</h3>
+            <p style="margin-bottom: 20px;">Nosotros nos encargamos de organizar transporte cruzando el tren con otros miembros, hotel y quedada post-carrera.</p>
+            <a href="eventos.html" class="btn btn-primary">Ver carreras programadas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>
