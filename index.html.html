@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Run & Rise Club</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html.html" class="logo animate-fade-in" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Run & Rise Club" style="height: 40px; margin-right: 10px;">
+        <span>Run & Rise Club</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html.html">Inicio</a></li>
+          <li><a href="historia.html" target="_blank">Nuestra historia</a></li>
+          <li><a href="eventos.html" target="_blank">Próximos eventos</a></li>
+          <li><a href="eventos-celebrados.html">Eventos celebrados</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="merchandising.html">Merchandising</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <div style="margin-bottom: 24px;" class="animate-fade-in">
+          <img src="logo.png" alt="Logo Run & Rise" class="hero-logo" style="max-height: 120px; background: rgba(255,255,255,0.8); padding: 10px; border-radius: 20px; cursor: pointer;">
+        </div>
+        <p class="eyebrow">Running · Comunidad · Viajes · Superación</p>
+        <h1>Corre. Conecta. Crece.</h1>
+        <p class="hero-text">
+          Run & Rise Club es un club de running que une vida saludable, amistad,
+          motivación y experiencias compartidas a través de quedadas semanales,
+          carreras y escapadas a eventos deportivos.
+        </p>
+        <div class="hero-buttons">
+          <a href="eventos.html" class="btn btn-primary">Ver próximos eventos</a>
+          <a href="historia.html" class="btn btn-secondary">Conoce nuestra historia</a>
+        </div>
+      </div>
+      <div style="flex: 1; display: flex; justify-content: flex-end; min-width: 300px;" class="animate-fade-in" style="animation-delay: 0.3s;">
+        <img src="quedada.png" alt="Quedada Run & Rise" class="hero-img" style="width: 100%; max-width: 550px; height: auto; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border: 4px solid rgba(255,255,255,0.2); cursor: pointer;">
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-tag">Momentos del club</p>
+        <h2>Eventos y experiencias Run & Rise</h2>
+      </div>
+
+      <div class="carousel" id="mainCarousel">
+        <div class="slides">
+          <!-- Clone del último para loop infinito (ahora slide-celebrado4) -->
+          <div class="slide slide-celebrado4">
+            <a href="celebrado4.html" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Celebrado</span>
+              <h3>Maratón de Madrid 2024</h3>
+              <p>Épica y superación en la capital. Crónica de un viaje inolvidable.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-1">
+            <a href="evento2.html" target="_blank" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Evento propio</span>
+              <h3>5K Run & Rise Weekend</h3>
+              <p>Carrera popular del club con dorsal, música, fotos y desayuno post-run.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-2">
+            <a href="evento3.html" target="_blank" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Excursión deportiva</span>
+              <h3>Viaje a la Media Maratón de Valencia</h3>
+              <p>Transporte, grupo, merchandising y experiencia compartida en otra ciudad.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-3">
+            <a href="evento1.html" target="_blank" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Comunidad</span>
+              <h3>Quedada semanal + café del club</h3>
+              <p>Entrenamientos para distintos niveles y ambiente social después de correr.</p>
+            </a>
+          </div>
+
+          <!-- Nuevos: Eventos Celebrados -->
+          <div class="slide slide-celebrado1">
+            <a href="celebrado1.html" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Celebrado</span>
+              <h3>Media Maratón Valencia 2024</h3>
+              <p>Revive la marea rosa y naranja en la ciudad del running.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-celebrado2">
+            <a href="celebrado2.html" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Celebrado</span>
+              <h3>2º Aniversario 5K</h3>
+              <p>Dos años creciendo juntos. Mira las mejores fotos de nuestra carrera.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-celebrado3">
+            <a href="celebrado3.html" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Comunidad</span>
+              <h3>Quedada Solidaria Navidad</h3>
+              <p>Recogida de alimentos y kilómetros con espíritu navideño.</p>
+            </a>
+          </div>
+
+          <div class="slide slide-celebrado4">
+            <a href="celebrado4.html" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Celebrado</span>
+              <h3>Maratón de Madrid 2024</h3>
+              <p>Épica y superación en la capital. Crónica de un viaje inolvidable.</p>
+            </a>
+          </div>
+
+          <!-- Clone del primero para loop infinito -->
+          <div class="slide slide-1">
+            <a href="evento2.html" target="_blank" class="slide-card" style="display: block; text-decoration: none; color: inherit; transition: transform 0.2s;">
+              <span class="slide-label">Evento propio</span>
+              <h3>5K Run & Rise Weekend</h3>
+              <p>Carrera popular del club con dorsal, música, fotos y desayuno post-run.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="dot active" data-index="0"></div>
+          <div class="dot" data-index="1"></div>
+          <div class="dot" data-index="2"></div>
+          <div class="dot" data-index="3"></div>
+          <div class="dot" data-index="4"></div>
+          <div class="dot" data-index="5"></div>
+          <div class="dot" data-index="6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="valores" class="section section-soft">
+    <div class="container" style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <p class="section-tag">Filosofía</p>
+      <h2 style="margin-bottom: 30px;">Nuestros valores</h2>
+      
+      <div class="values-grid">
+        <div class="value-bubble"><span>🌟</span> Comunidad y amistad</div>
+        <div class="value-bubble"><span>🏃‍♀️</span> Vida saludable</div>
+        <div class="value-bubble"><span>🔥</span> Motivación constante</div>
+        <div class="value-bubble"><span>📈</span> Superación personal</div>
+        <div class="value-bubble"><span>🌍</span> Experiencias compartidas</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container cta-box">
+      <a href="contacto.html" style="text-decoration: none; color: inherit; display: block;">
+        <p class="section-tag light">Únete al club</p>
+        <h2>Un club para correr acompañado</h2>
+        <p>
+          Tanto si quieres empezar a correr como si buscas viajar a nuevas carreras,
+          en Run & Rise encontrarás una comunidad que te impulsa a seguir.
+        </p>
+      </a>
+      <a href="contacto.html" class="btn btn-white">Contactar</a>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
+  </footer>
+
+  <style>
+    .slides {
+      cursor: ew-resize;
+    }
+    .slides:active {
+      cursor: grabbing;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const carousel = document.querySelector('.carousel');
+      const slidesContainer = document.querySelector('.slides');
+      const slides = document.querySelectorAll('.slide');
+      const dots = document.querySelectorAll('.dot');
+      
+      let currentIndex = 1; // Empezamos en el 1 (el primero real, después del clon)
+      let isTransitioning = false;
+      
+      // Configuración inicial del contenedor
+      slidesContainer.style.transition = 'none';
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      
+      // Forzar reflow para aplicar el transform sin transición al inicio
+      slidesContainer.offsetHeight; 
+      slidesContainer.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+
+      function updateDots() {
+        dots.forEach((dot, i) => {
+          let realIndex = currentIndex - 1;
+          const totalRealSlides = 7;
+          
+          if (currentIndex === 0) realIndex = totalRealSlides - 1;
+          if (currentIndex === totalRealSlides + 1) realIndex = 0;
+          
+          dot.classList.toggle('active', i === realIndex);
+        });
+      }
+
+      function goToSlide(index, animate = true) {
+        if (isTransitioning) return;
+        
+        isTransitioning = true;
+        currentIndex = index;
+        
+        if (!animate) {
+          slidesContainer.style.transition = 'none';
+        } else {
+          slidesContainer.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+        }
+        
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        updateDots();
+      }
+
+      slidesContainer.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        
+        // Efecto "infinito" - Salto sin animación
+        if (currentIndex === 0) {
+          // Si estamos en el clon del último, saltamos al último real
+          slidesContainer.style.transition = 'none';
+          currentIndex = slides.length - 2;
+          slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        } else if (currentIndex === slides.length - 1) {
+          // Si estamos en el clon del primero, saltamos al primero real
+          slidesContainer.style.transition = 'none';
+          currentIndex = 1;
+          slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+      });
+
+      // Auto-scroll cada 3 segundos
+      let autoSlideInterval = setInterval(() => {
+        goToSlide(currentIndex + 1);
+      }, 3000);
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(() => {
+          goToSlide(currentIndex + 1);
+        }, 3000);
+      }
+      
+      slidesContainer.addEventListener('click', function(e) {
+        if (e.target.closest('a.slide-card')) return;
+        if (window.getSelection().toString().length > 0) return;
+
+        resetAutoSlide();
+        const rect = carousel.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        
+        if (clickX > rect.width / 2) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(currentIndex - 1);
+        }
+      });
+      
+      // Control por puntos (dots)
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+          resetAutoSlide();
+          goToSlide(i + 1);
+        });
+      });
+
+      // Touch events (swipes)
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      slidesContainer.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      slidesContainer.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        const minSwipeDistance = 40;
+        if (touchStartX - touchEndX > minSwipeDistance) {
+          resetAutoSlide();
+          goToSlide(currentIndex + 1); 
+        } else if (touchEndX - touchStartX > minSwipeDistance) {
+          resetAutoSlide();
+          goToSlide(currentIndex - 1); 
+        }
+      }
+    });
+  </script>
+  <script src="shared.js"></script>
+</body>
+</html>
