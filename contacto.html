@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Run & Rise Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-form-container {
+      max-width: 600px;
+      margin: 60px auto 20px;
+      background: white;
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--text);
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--pink);
+    }
+    .hero-contacto {
+      background: linear-gradient(135deg, rgba(255,138,61,0.1), rgba(255,79,147,0.1));
+      padding: 60px 0;
+      text-align: center;
+    }
+    .contact-card {
+      background: linear-gradient(135deg, var(--orange), var(--pink)) !important;
+      color: white !important;
+      border: none !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .contact-card h3 {
+      color: white !important;
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      color: white !important;
+      opacity: 0.95;
+      text-align: center !important;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html.html" class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Run & Rise Club" style="height: 40px; margin-right: 10px;">
+        <span>Run & Rise Club</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html.html">Inicio</a></li>
+          <li><a href="historia.html" target="_blank">Nuestra historia</a></li>
+          <li><a href="eventos.html" target="_blank">Próximos eventos</a></li>
+          <li><a href="eventos-celebrados.html">Eventos celebrados</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="merchandising.html">Merchandising</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-contacto">
+    <div class="container">
+      <span class="pill">Hablemos</span>
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 10px;">Contacto</h1>
+      <p style="font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 10px auto;">¿Tienes dudas? ¿Quieres apuntarte a uno de nuestros próximos eventos? Escríbenos y te contestaremos corriendo.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p>runandrise@gmail.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Instagram</h3>
+          <p>@runandriseclub</p>
+        </div>
+        <div class="contact-card">
+          <h3>Ciudad base</h3>
+          <p>Sevilla</p>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <h2 style="font-size: 1.8rem; margin-bottom: 24px; text-align: center;">Inscripciones y Mensajes</h2>
+        <form onsubmit="event.preventDefault(); alert('¡Genial! Hemos recibido tu mensaje de contacto/inscripción. Te responderemos muy pronto.');">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" name="name" placeholder="Ej. Ana García" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="asunto">Motivo de contacto principal</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">Selecciona una opción...</option>
+              <option value="apuntar_quedada">Inscribirme: Quedada Semanal (Sevilla)</option>
+              <option value="apuntar_5k">Inscribirme: Carrera Run & Rise 5K</option>
+              <option value="apuntar_viaje">Inscribirme: Viaje a la Media Maratón de Valencia</option>
+              <option value="duda">Duda general / Otra consulta</option>
+              <option value="colaboracion">Propuesta de colaboración / Marca</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="mensaje">Mensaje o comentarios (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí cualquier duda u observación que tengas..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1.1rem; padding: 14px;">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>

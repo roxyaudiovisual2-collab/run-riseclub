@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Run & Rise Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .checkout-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 40px;
+    }
+    
+    @media (max-width: 768px) {
+      .checkout-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .checkout-card {
+      background: white;
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+    }
+    
+    .checkout-card h2 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 10px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: var(--text);
+    }
+    
+    .form-group input, 
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    
+    .form-group input:focus, 
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--pink);
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .form-row .form-group {
+      flex: 1;
+    }
+    
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px dotted var(--line);
+    }
+    
+    .summary-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-top: 20px;
+    }
+    
+    .payment-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    
+    .payment-option:hover {
+      background: #fdfdfd;
+    }
+    
+    .btn-pay {
+      display: block;
+      text-align: center;
+      width: 100%;
+      background: var(--pink);
+      color: white;
+      text-decoration: none;
+      padding: 16px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.2s ease;
+    }
+    
+    .btn-pay:hover {
+      background: var(--text);
+    }
+    
+    .hero-checkout {
+      background: linear-gradient(135deg, rgba(255,138,61,0.1), rgba(255,79,147,0.1));
+      padding: 40px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html.html" class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Run & Rise Club" style="height: 40px; margin-right: 10px;">
+        <span>Run & Rise Club</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html.html">Inicio</a></li>
+          <li><a href="historia.html" target="_blank">Nuestra historia</a></li>
+          <li><a href="eventos.html" target="_blank">Próximos eventos</a></li>
+          <li><a href="eventos-celebrados.html">Eventos celebrados</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="merchandising.html">Merchandising</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-checkout">
+    <div class="container">
+      <h1 style="font-size: 2.5rem; margin-top: 10px;">Completar Pedido</h1>
+      <p style="color: var(--muted);">Estás a un paso de recibir tu pedido oficial en casa.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <form class="checkout-container" onsubmit="event.preventDefault(); alert('¡Pago completado con éxito! Tu pedido está en camino. Gracias por apoyar al Run & Rise Club.'); window.location.href='index.html.html';">
+        
+        <!-- Izquierda: Formulario -->
+        <div>
+          <div class="checkout-card" style="margin-bottom: 30px;">
+            <h2>1. Datos de envío</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" required placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label>Apellidos</label>
+                <input type="text" required placeholder="Tus apellidos">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>Correo Electrónico</label>
+              <input type="email" required placeholder="correo@ejemplo.com">
+            </div>
+            
+            <div class="form-group">
+              <label>Dirección completa</label>
+              <input type="text" required placeholder="Calle, número, piso...">
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label>Código Postal</label>
+                <input type="text" required placeholder="Ej. 41001">
+              </div>
+              <div class="form-group">
+                <label>Ciudad</label>
+                <input type="text" required placeholder="Ej. Sevilla">
+              </div>
+            </div>
+          </div>
+          
+          <div class="checkout-card">
+            <h2>2. Método de pago</h2>
+            <label class="payment-option">
+              <input type="radio" name="pago" required checked>
+              <span>💳 Tarjeta de Crédito / Débito</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="pago" required>
+              <span>📱 Bizum al club</span>
+            </label>
+            
+            <div class="form-group" style="margin-top: 15px;">
+              <input type="text" placeholder="Número de tarjeta simulado" style="margin-bottom: 10px;">
+              <div class="form-row">
+                <input type="text" placeholder="MM/AA">
+                <input type="text" placeholder="CVC">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Derecha: Resumen de compra -->
+        <div>
+          <div class="checkout-card" style="position: sticky; top: 100px;">
+            <h2>Resumen del Carrito</h2>
+            <div style="background: center/cover url('logo.png') no-repeat; height: 100px; width: 100px; margin: 0 auto 20px; opacity: 0.8;"></div>
+            
+            <div class="summary-item">
+              <span>Artículos seleccionados</span>
+              <span>1</span>
+            </div>
+            <div class="summary-item">
+              <span>Envío (Península)</span>
+              <span>4,90 €</span>
+            </div>
+            
+            <div class="summary-total">
+              <span>Total Estimado</span>
+              <span style="color: var(--pink);">Calculando...</span>
+            </div>
+            
+            <p style="font-size: 0.85rem; color: var(--muted); margin-top: 15px; text-align: center;">
+              Al hacer clic aceptas los términos de compra de la tienda del club.
+            </p>
+            
+            <button type="submit" class="btn-pay">Completar Pago Seguro 🔒</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>
