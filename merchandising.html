@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merchandising - Run & Rise Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .merch-hero {
+      padding: 80px 0;
+      text-align: center;
+      background: linear-gradient(135deg, var(--orange-soft), var(--pink-soft));
+    }
+    
+    .merch-hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin-bottom: 20px;
+    }
+    
+    .merch-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--text);
+    }
+    
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .product-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 48px rgba(255, 79, 147, 0.18);
+    }
+    
+    .product-image {
+      height: 250px;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+    
+    .product-info {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    
+    .product-title {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    
+    .product-price {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--pink);
+      margin-bottom: 16px;
+    }
+    
+    .product-desc {
+      color: var(--muted);
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    
+    .btn-buy {
+      display: block;
+      text-align: center;
+      width: 100%;
+      background: var(--text);
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+    
+    .btn-buy:hover {
+      background: var(--pink);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html.html" class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Run & Rise Club" style="height: 40px; margin-right: 10px;">
+        <span>Run & Rise Club</span>
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html.html">Inicio</a></li>
+          <li><a href="historia.html" target="_blank">Nuestra historia</a></li>
+          <li><a href="eventos.html" target="_blank">Próximos eventos</a></li>
+          <li><a href="eventos-celebrados.html">Eventos celebrados</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="merchandising.html">Merchandising</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="merch-hero">
+    <div class="container">
+      <span class="pill">Tienda Oficial</span>
+      <h1>Merchandising Run & Rise</h1>
+      <p>Lleva los colores del club contigo. Equipación oficial y accesorios para nuestros corredores.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading" style="text-align: center;">
+        <h2>Nuestros Productos</h2>
+        <p>Todo lo que necesitas con el logo de nuestra comunidad</p>
+      </div>
+      
+      <div class="product-grid">
+        <!-- Camiseta -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="camisetanaranja.png" alt="Camiseta Técnica" id="img-camiseta">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Camiseta Técnica Run & Rise</h3>
+            <div class="product-price">25,00 €</div>
+            <p class="product-desc">Camiseta transpirable súper ligera para tus entrenamientos y carreras, con nuestro logo central.</p>
+            
+            <div class="product-options" style="display: flex; gap: 10px; margin-bottom: 20px;">
+              <select style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit;">
+                <option>Talla S</option>
+                <option>Talla M</option>
+                <option>Talla L</option>
+                <option>Talla XL</option>
+                <option>Talla XXL</option>
+              </select>
+              <select style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit;" onchange="document.getElementById('img-camiseta').src = this.value">
+                <option value="camisetanaranja.png">Naranja</option>
+                <option value="camisetarosa.png">Rosa</option>
+              </select>
+            </div>
+
+            <a href="compra.html" class="btn-buy">Comprar</a>
+          </div>
+        </article>
+
+        <!-- Sudadera -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="hoodienaranja.png" alt="Sudadera" id="img-sudadera">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Sudadera Post-Entreno</h3>
+            <div class="product-price">45,00 €</div>
+            <p class="product-desc">El mejor premio después de una carrera de invierno. Cómoda, calentita y con la identidad del club.</p>
+            
+            <div class="product-options" style="display: flex; gap: 10px; margin-bottom: 20px;">
+              <select style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit;">
+                <option>Talla S</option>
+                <option>Talla M</option>
+                <option>Talla L</option>
+                <option>Talla XL</option>
+                <option>Talla XXL</option>
+              </select>
+              <select style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit;" onchange="document.getElementById('img-sudadera').src = this.value">
+                <option value="hoodienaranja.png">Naranja</option>
+                <option value="hoodierosa.png">Rosa</option>
+              </select>
+            </div>
+
+            <a href="compra.html" class="btn-buy">Comprar</a>
+          </div>
+        </article>
+
+        <!-- Gorra -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="gorranaranja.png" alt="Gorra Ligera" id="img-gorra">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gorra Ligera Running</h3>
+            <div class="product-price">18,00 €</div>
+            <p class="product-desc">Protección y transpirabilidad. <strong>Talla única (Unitalla)</strong>.</p>
+            
+            <div class="product-options" style="margin-bottom: 20px;">
+              <select style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit;" onchange="document.getElementById('img-gorra').src = this.value">
+                <option value="gorranaranja.png">Naranja</option>
+                <option value="gorra rosa.png">Rosa</option>
+              </select>
+            </div>
+
+            <a href="compra.html" class="btn-buy">Comprar</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Run & Rise Club · Proyecto académico</p>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>
